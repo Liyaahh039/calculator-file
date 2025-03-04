@@ -1,0 +1,91 @@
+/* Style général */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-image: url(FOnd.jpeg);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+/* Style de la calculatrice */
+.calculator {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    text-align: center;
+}
+
+/* Écran d'affichage */
+.display {
+    margin-bottom: 20px;
+}
+
+#result {
+    width: 90%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 2em;
+    background-color: #f4d4e3;
+    color: #ffffff;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Grille des boutons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Boutons */
+button {
+    background-color: #ffffff;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #dcdde1;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Boutons spéciaux */
+.operator {
+    background-color: #f3b0da;
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #f3b0da;
+}
+
+.equal {
+    background-color: #e3719e;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.equal:hover {
+    background-color: #e3719e;
+}
+
+.zero {
+    grid-column: span 2;
+}
